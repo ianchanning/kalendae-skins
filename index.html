@@ -19,6 +19,13 @@
 			Inspired by <a href="http://www.premiumpixels.com/freebies/pretty-little-calendar-psd/">Orman Clark</a> great design.
 		</p>
 		
+		<p>
+			Kalendae <a href="https://github.com/ChiperSoft/Kalendae">Project</a> & <a href="https://github.com/anasnakawa/kalendae-skins">Skin</a> on Github
+		</p>
+		
+		<div id="twitterButton"></div>
+		<div id="plusButton"></div>
+		
 		<hr />
 		
 		<p>Single Select</p>
@@ -176,6 +183,23 @@
 		<input type="text" class="auto-kal">
 	
 	</div>
-	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.twitterbutton.js"></script>
+	<script>
+		(function($) {
+			$(function() {
+				var message = 'Metal - A Kalendae datepicker theme';
+				
+				// tweet button
+				$('#twitterButton').twitterbutton({
+				  	user:'anasnakawa',
+				  	layout:'horizontal',
+				  	title:message,
+				  	lang:'en'
+				 });
+				
+			});
+		})(jQuery);
+	</script>
 </body>
 </html>
