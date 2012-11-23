@@ -16,6 +16,13 @@ body {
 	font-family: Helvetica, Arial, Sans-serif;
 }
 
+.gh-fork img {
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	border: 0;
+}
+
 a {
 	color: #148AD3;
 	text-decoration: none;

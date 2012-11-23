@@ -1,0 +1,35 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Kalendae - Metal Skin</title>
+	<link rel="stylesheet" href="build/kalendae.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="build/metal.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8">
+	<script src="build/kalendae.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		body {
+			background: url(images/rainbow-wallpaper.jpg);
+		}
+		
+		#wrap {
+			display: block;
+			margin: 200px auto;
+			width: 210px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<script type="text/javascript" charset="utf-8">
+			var wrap = document.getElementById('wrap');
+			new Kalendae(wrap, {
+				months:1,
+				mode:'single',
+				selected:Kalendae.moment().subtract({M:1})
+			});
+		</script>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</body>
+</html>
